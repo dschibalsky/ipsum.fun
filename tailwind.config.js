@@ -29,8 +29,8 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				sans: ["var(--font-another)", ...defaultTheme.fontFamily.sans],
-				display: ["var(--font-calsans)"],
+				sans: ["var(--font-calsans)", ...defaultTheme.fontFamily.sans],
+				display: ["var(--font-anton)"],
 			},
 			backgroundImage: {
 				"gradient-radial":

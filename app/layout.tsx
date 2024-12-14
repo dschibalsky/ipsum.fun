@@ -48,9 +48,9 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
-const another = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-another",
+const anton = LocalFont({
+  src: "../public/fonts/Anton-Regular.ttf",
+  variable: "--font-anton",
 });
 
 export default function RootLayout({
@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[calSans.variable, another.variable].join(" ")}>
+    <html lang="en" className={[calSans.variable, anton.variable].join(" ")}>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined

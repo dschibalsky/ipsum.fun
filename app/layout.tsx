@@ -11,8 +11,7 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "ipsum.fun",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    description: "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://ipsum.fun",
     siteName: "ipsum.fun",
     images: [
@@ -61,8 +60,9 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>

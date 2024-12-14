@@ -3,8 +3,6 @@ import { allProjects } from "contentlayer/generated";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
 import "./mdx.css";
-import { ReportView } from "./view";
-import { pageviewTracker } from "@/util/pageviews";
 
 export const revalidate = 60;
 
@@ -30,14 +28,9 @@ export default async function PostPage({ params }: Props) {
     notFound();
   }
 
-  // Views mit SQLite abrufen
-  const views = pageviewTracker.getPageviews([{ slug }])[slug];
-
   return (
     <div className="bg-zinc-50 min-h-screen">
-      <Header project={project} views={views} />
-      <ReportView slug={project.slug} />
-
+      <Header project={project} />
       <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
         <Mdx code={project.body.code} />
       </article>

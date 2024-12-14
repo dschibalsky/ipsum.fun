@@ -11,7 +11,9 @@
   "dependencies": {
     "@next/font": "^13.5.4",
     "@next/mdx": "^13.5.4",
+    "@types/better-sqlite3": "^7.6.12",
     "@upstash/redis": "^1.23.3",
+    "better-sqlite3": "^11.7.0",
     "contentlayer": "^0.3.4",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.284.0",

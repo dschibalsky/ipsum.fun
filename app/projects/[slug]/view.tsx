@@ -2,16 +2,24 @@
 
 import { useEffect } from "react";
 
-export const ReportView: React.FC<{ slug: string }> = ({ slug }) => {
-	useEffect(() => {
-		fetch("/api/incr", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({ slug }),
-		});
-	}, [slug]);
+export function ReportView({ slug }: { slug: string }) {
+  useEffect(() => {
+    const trackView = async () => {
+      try {
+        await fetch("/api/views", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ slug }),
+        });
+      } catch (error) {
+        console.error("Failed to track page view", error);
+      }
+    };
 
-	return null;
-};
+    trackView();
+  }, [slug]);
+
+  return null;
+}

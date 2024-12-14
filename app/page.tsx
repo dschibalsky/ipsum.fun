@@ -42,10 +42,10 @@ export default function Home() {
             className="underline duration-500 hover:text-zinc-300"
           >
             unkey.dev
-          </Link> to solve API authentication and authorization for developers.
+          </Link>{" "}
+          to solve API authentication and authorization for developers.
         </h2>
       </div>
     </div>
   );
-
 }

@@ -1,7 +1,6 @@
 import "../global.css";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
@@ -61,9 +60,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={[calSans.variable, another.variable].join(" ")}>
-      <head>
-        <Analytics />
-      </head>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined

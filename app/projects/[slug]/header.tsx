@@ -60,7 +60,7 @@ export const Header: React.FC<Props> = ({ project }) => {
                   : "text-zinc-600 hover:text-zinc-900"
               } `}
             ></span>
-            <Link target="_blank" href="https://twitter.com/chronark_">
+            <Link target="_blank" href="https://twitter.com/ipsum.fun_">
               <Twitter
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
@@ -69,7 +69,7 @@ export const Header: React.FC<Props> = ({ project }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="https://github.com/chronark">
+            <Link target="_blank" href="https://github.com/ipsum.fun">
               <Github
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting

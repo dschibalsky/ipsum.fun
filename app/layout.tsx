@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "ipsum.fun",
     card: "summary_large_image",
   },
   icons: {

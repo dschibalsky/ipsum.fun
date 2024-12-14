@@ -49,13 +49,18 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+const another = LocalFont({
+  src: "../public/fonts/CalSans-SemiBold.ttf",
+  variable: "--font-another",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[calSans.variable].join(" ")}>
+    <html lang="en" className={[calSans.variable, another.variable].join(" ")}>
       <head>
         <Analytics />
       </head>

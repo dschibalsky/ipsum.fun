@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
 import { allProjects } from "contentlayer/generated";
-import { Mdx } from "@/app/components/mdx";
+
 import { Header } from "./header";
 import "./mdx.css";
+import { Mdx } from "@/lib/components/mdx";
 
 export const revalidate = 60;
 

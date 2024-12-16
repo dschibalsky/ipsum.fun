@@ -1,8 +1,8 @@
 "use client";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Card } from "@/lib/components/card";
+import { Navigation } from "@/lib/components/nav";
+import { Linkedin } from "lucide-react";
 import Link from "next/link";
-import { Navigation } from "../components/nav";
-import { Card } from "../components/card";
 
 const socials = [
   {

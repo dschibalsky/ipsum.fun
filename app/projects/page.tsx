@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
-import { Navigation } from "../components/nav";
-import { Card } from "../components/card";
 import { Article } from "./article";
+import { Navigation } from "@/lib/components/nav";
+import { Card } from "@/lib/components/card";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {

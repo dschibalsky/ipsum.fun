@@ -1,4 +1,4 @@
-import "../global.css";
+import "../lib/styles/global.css";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
 
